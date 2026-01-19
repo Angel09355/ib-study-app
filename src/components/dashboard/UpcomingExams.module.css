@@ -1,0 +1,93 @@
+.upcoming-container {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.header h3 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.exam-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.exam-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md);
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--accent-primary);
+    transition: transform var(--transition-fast);
+}
+
+.exam-item:hover {
+    transform: translateX(4px);
+}
+
+.exam-item.urgent {
+    border-left-color: var(--accent-danger);
+    background: rgba(255, 118, 117, 0.1);
+}
+
+.exam-info {
+    flex: 1;
+}
+
+.exam-title {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.exam-subject {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.exam-deadline {
+    text-align: right;
+}
+
+.countdown {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+}
+
+.countdown.urgent {
+    color: var(--accent-danger);
+}
+
+.deadline-date {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.empty-state {
+    text-align: center;
+    padding: var(--spacing-xl);
+    color: var(--text-muted);
+}
+
+.empty-state svg {
+    width: 48px;
+    height: 48px;
+    margin-bottom: var(--spacing-sm);
+    opacity: 0.5;
+}
